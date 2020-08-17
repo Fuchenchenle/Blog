@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>腾讯云＋hexo 搭建个人博客</title>
+      <link href="/2020/08/17/%E8%85%BE%E8%AE%AF%E4%BA%91%EF%BC%8Bhexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+      <url>/2020/08/17/%E8%85%BE%E8%AE%AF%E4%BA%91%EF%BC%8Bhexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Hexo安装过程"><a href="#Hexo安装过程" class="headerlink" title="Hexo安装过程"></a><center>Hexo安装过程</center></h3><h3 id="准备任务"><a href="#准备任务" class="headerlink" title="准备任务"></a>准备任务</h3><h5 id="1-安装node-js和git"><a href="#1-安装node-js和git" class="headerlink" title="1.安装node.js和git"></a>1.安装node.js和git</h5><p>我们只需复制网址到官网下载即可 </p><p><code>https://git-scm.com/downloads https://nodejs.org/zh-cn</code> </p><p>注意的是我们要添加node的环境变量</p><p>环境变量添加写node的安装路径即可</p><p><img src="E:%5CBlog%5Cimg%5C1.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Centos </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>yum源</title>
       <link href="/2020/08/08/yum%E6%BA%90/"/>
       <url>/2020/08/08/yum%E6%BA%90/</url>
