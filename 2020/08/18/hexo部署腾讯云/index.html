@@ -442,7 +442,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    633
+                    635
                 </div>
                 
 
@@ -477,8 +477,8 @@ passwd fuchen
 chmod 740 /etc/sudoers
 vim /etc/sudoers
 
-100 root    ALL=(ALL)       ALL
-101 fuchen     ALL=(ALL)       ALL</code></pre><p>11.本地windows10使用Gitbash创建密钥</p>
+root    ALL=(ALL)       ALL
+fuchen     ALL=(ALL)       ALL</code></pre><p>11.本地windows10使用Gitbash创建密钥</p>
 <pre><code>ssh-keygen -t rsa</code></pre><p>12.将本地创建id_rsa.pub中文件复制</p>
 <pre><code>su fuchen
 mkdir ~/.ssh
@@ -517,7 +517,7 @@ fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
 <pre><code>sudo ln -s  /usr/local/git/bin/git-upload-pack  /usr/bin/git-upload-pack</code></pre><h5 id="2-git-receive-pack-未找到命令"><a href="#2-git-receive-pack-未找到命令" class="headerlink" title="2.git-receive-pack: 未找到命令"></a>2.git-receive-pack: 未找到命令</h5><pre><code>bash: git-receive-pack: command not found
 fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
 <pre><code>sudo ln -s /usr/local/git/bin/git-receive-pack  /usr/bin/git-receive-pack</code></pre><h5 id="3-无法远程连接获取"><a href="#3-无法远程连接获取" class="headerlink" title="3.无法远程连接获取"></a>3.无法远程连接获取</h5><pre><code>fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
-<pre><code>删掉本地ssh公钥重新上传至服务器</code></pre>
+<pre><code>重试或者 删掉本地ssh公钥重新上传至服务器</code></pre>
             </div>
             <hr/>
 
