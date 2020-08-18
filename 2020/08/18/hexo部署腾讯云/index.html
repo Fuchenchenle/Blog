@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="腾讯云＋hexo 搭建个人博客, Fuchenchenle">
+    <meta name="keywords" content="hexo部署腾讯云, Fuchenchenle">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>腾讯云＋hexo 搭建个人博客 | Fuchenchenle</title>
+    <title>hexo部署腾讯云 | Fuchenchenle</title>
     <link rel="icon" type="image/jpeg" href="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/avatar.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -291,7 +291,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">腾讯云＋hexo 搭建个人博客</h1>
+                    <h1 class="description center-align post-title">hexo部署腾讯云</h1>
                 </div>
             </div>
         </div>
@@ -433,7 +433,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-17
+                    2020-08-18
                 </div>
                 
 
@@ -442,7 +442,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    342
+                    633
                 </div>
                 
 
@@ -454,36 +454,70 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Hexo安装过程"><a href="#Hexo安装过程" class="headerlink" title="Hexo安装过程"></a><center>Hexo安装过程</center></h3><h3 id="准备任务"><a href="#准备任务" class="headerlink" title="准备任务"></a>准备任务</h3><h5 id="1-安装node-js和git"><a href="#1-安装node-js和git" class="headerlink" title="1.安装node.js和git"></a>1.安装node.js和git</h5><p>我们只需复制网址到官网下载即可 </p>
-<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git下载</a><br><a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node下载</a></p>
-<p>需要注意的是我们要添加node的环境变量</p>
-<p>环境变量配置写node的安装路径即可</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/1.png" alt=""></p>
-<h5 id="2-验证node安装完成"><a href="#2-验证node安装完成" class="headerlink" title="2.验证node安装完成"></a>2.验证node安装完成</h5><p>在cmd中输入 <code>node -v</code> <code>npm -v</code>出现版本号代表安装完成</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/2.png" alt=""></p>
-<h5 id="3-其他软件（可选）"><a href="#3-其他软件（可选）" class="headerlink" title="3.其他软件（可选）"></a>3.其他软件（可选）</h5><p>Hexo支持markdown语法来写文章，我们可以下载markdown的文本编辑器</p>
-<p><a href="https://www.typora.io/" target="_blank" rel="noopener">Typora下载</a></p>
-<p>在编辑配置文档的时候我们可以用 Notepad++ 来编辑文档</p>
-<p><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener">Notepad++下载</a></p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>Hexo是有官方说明文档，想看最详细的教程可以移步到官网</p>
-<p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">文档|hexo</a></p>
-<h5 id="1-安装Hexo"><a href="#1-安装Hexo" class="headerlink" title="1.安装Hexo"></a>1.安装Hexo</h5><p>打开cmd 然后在cmd中输入</p>
-<p><code>npm install -g hexo-cli</code></p>
-<p>等待安装完成</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/3.png" alt=""></p>
-<p>2.生成Hexo</p>
-<p>我们执行以下命令，生成一个博客</p>
-<p><code>hexo init blog</code></p>
-<p>安装过程中，他会自动生成一个文件夹，这个文件夹就是Hexo的配置文件</p>
-<p>“blog”是你要生成博客的文件夹名称，可以根据自己的喜好来取名</p>
-<p>等待安装完成</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/4.png" alt=""></p>
-<p>安装完成后，我们进入生成的文件夹，用<code>hexo s</code> 这个命令来启动Hexo</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/5.png" alt=""></p>
-<p>输入它提示的网站 127.0.0.1:4000 进去之后就可以看到</p>
-<p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/Hexo/6.png" alt=""></p>
-<p>至此，Hexo的安装就完成了</p>
+                <h3 id="Hexo部署到腾讯云"><a href="#Hexo部署到腾讯云" class="headerlink" title="Hexo部署到腾讯云"></a><center>Hexo部署到腾讯云</center></h3><h3 id="一、部署环境与准备"><a href="#一、部署环境与准备" class="headerlink" title="一、部署环境与准备"></a>一、部署环境与准备</h3><h5 id="1-环境"><a href="#1-环境" class="headerlink" title="1.环境"></a>1.环境</h5><p>本地Windows10操作系统</p>
+<p>腾讯云Cenots7.6服务器</p>
+<h5 id="2-准备"><a href="#2-准备" class="headerlink" title="2.准备"></a>2.准备</h5><p>Hexo 本地博客</p>
+<p>Xshell 链接到你的服务器</p>
+<h3 id="二、云服务器配置Git"><a href="#二、云服务器配置Git" class="headerlink" title="二、云服务器配置Git"></a>二、云服务器配置Git</h3><p>1.安装依赖库</p>
+<pre><code>yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel </code></pre><p>2.安装编译工具</p>
+<pre><code>yum install gcc perl-ExtUtils-MakeMaker package</code></pre><p>3.查看git的版本</p>
+<pre><code>git version</code></pre><p>4.删除git</p>
+<pre><code>yum remove git -y</code></pre><p>5.下载解压最新版</p>
+<pre><code>cd /usr/local/src    #下载的目录
+https://www.kernel.org/pub/software/scm/git/git-2.28.0.tar.gz    #下载最新版
+tar -zxvf git-2.28.0.tar.gz        #解压到当前文件夹</code></pre><p>6.编辑并安装</p>
+<pre><code>cd git-2.28.0    #进入文件夹
+make prefix=/usr/local/git all    #编译源码
+make prefix=/usr/local/git install    #安装路径</code></pre><p>7.配置git的环境变量</p>
+<pre><code>echo &#39;export PATH=$PATH:/usr/local/git/bin&#39; &gt;&gt; /etc/bashrc</code></pre><p>8.刷新环境变量</p>
+<pre><code>source /etc/bashrc</code></pre><p>9.查看版本号</p>
+<pre><code>git --version</code></pre><p>10创建git用户并且修改权限</p>
+<pre><code>adduser fuchen
+passwd fuchen
+chmod 740 /etc/sudoers
+vim /etc/sudoers
 
+100 root    ALL=(ALL)       ALL
+101 fuchen     ALL=(ALL)       ALL</code></pre><p>11.本地windows10使用Gitbash创建密钥</p>
+<pre><code>ssh-keygen -t rsa</code></pre><p>12.将本地创建id_rsa.pub中文件复制</p>
+<pre><code>su fuchen
+mkdir ~/.ssh
+vim ~/.ssh/authorized_keys</code></pre><p>13.本地测试</p>
+<pre><code>ssh -v fuchen@服务器ip</code></pre><h3 id="三、云服务器网站配置"><a href="#三、云服务器网站配置" class="headerlink" title="三、云服务器网站配置"></a>三、云服务器网站配置</h3><p>1.创建网站目录并且设置权限</p>
+<pre><code>su root
+mkdir /home/hexo
+chown git:git -R /home/hexo</code></pre><p>2.安装Nginx</p>
+<pre><code>yum install -y nginx
+systemctl start nginx.service    #启动服务</code></pre><p>3.修改Nginx配置文件</p>
+<pre class=" language-nginx"><code class="language-nginx">vim <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span>nginx<span class="token punctuation">.</span>conf 
+
+ <span class="token number">38</span>     <span class="token keyword">server</span> <span class="token punctuation">{</span>
+ <span class="token number">39</span>         <span class="token keyword">listen</span>       <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+ <span class="token number">40</span>         <span class="token keyword">listen</span>       <span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token number">80</span> default_server<span class="token punctuation">;</span>
+ <span class="token number">41</span>         <span class="token keyword">server_name</span>  fuchenchenle<span class="token punctuation">.</span>cn<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">#域名</span>
+ <span class="token number">42</span>         <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>hexo<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">#网站目录</span></code></pre>
+<p>4.重启服务器</p>
+<pre><code>systemctl restart nginx.service</code></pre><p>5.建立git仓库</p>
+<pre><code>su root
+cd /home/fuchen
+git init --bare blog.git
+chown fuchen:fuchen -R blog.git</code></pre><p>6.同步网站根目录</p>
+<pre><code>vim blog.git/hooks/post-receive
+
+#!/bin/sh
+git --work-tree=/home/hexo --git-dir=/home/fuchen/blog.git checkout -f</code></pre><p>7.修改权限</p>
+<pre><code>chmod +x /home/fuchen/blog.git/hooks/post-receive</code></pre><p> 8.在windows10本地hexo目录修改_config.yml文件</p>
+<pre><code>deploy:
+  type: git
+  repository: fuchen@49.232.59.235:/home/git/blog.git    #用户名@服务器Ip:git仓库位置
+  branch: master</code></pre><p>9.在本机gitbash部署</p>
+<pre><code>hexo clean
+hexo g -d</code></pre><h3 id="四、常见报错"><a href="#四、常见报错" class="headerlink" title="四、常见报错"></a>四、常见报错</h3><h5 id="1-git-upload-pack-未找到命令"><a href="#1-git-upload-pack-未找到命令" class="headerlink" title="1. git-upload-pack: 未找到命令"></a>1. git-upload-pack: 未找到命令</h5><pre><code>bash: git-upload-pack: command not found
+fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
+<pre><code>sudo ln -s  /usr/local/git/bin/git-upload-pack  /usr/bin/git-upload-pack</code></pre><h5 id="2-git-receive-pack-未找到命令"><a href="#2-git-receive-pack-未找到命令" class="headerlink" title="2.git-receive-pack: 未找到命令"></a>2.git-receive-pack: 未找到命令</h5><pre><code>bash: git-receive-pack: command not found
+fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
+<pre><code>sudo ln -s /usr/local/git/bin/git-receive-pack  /usr/bin/git-receive-pack</code></pre><h5 id="3-无法远程连接获取"><a href="#3-无法远程连接获取" class="headerlink" title="3.无法远程连接获取"></a>3.无法远程连接获取</h5><pre><code>fatal: Could not read from remote repository.</code></pre><p>解决方法</p>
+<pre><code>删掉本地ssh公钥重新上传至服务器</code></pre>
             </div>
             <hr/>
 
@@ -508,7 +542,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/08/17/%E8%85%BE%E8%AE%AF%E4%BA%91%EF%BC%8Bhexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">http://yoursite.com/2020/08/17/%E8%85%BE%E8%AE%AF%E4%BA%91%EF%BC%8Bhexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="http://yoursite.com/2020/08/18/hexo%E9%83%A8%E7%BD%B2%E8%85%BE%E8%AE%AF%E4%BA%91/">http://yoursite.com/2020/08/18/hexo%E9%83%A8%E7%BD%B2%E8%85%BE%E8%AE%AF%E4%BA%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -715,9 +749,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/08/18/hexo%E9%83%A8%E7%BD%B2%E8%85%BE%E8%AE%AF%E4%BA%91/">
                     <div class="card-image">
@@ -739,9 +774,9 @@ yum install curl
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -754,6 +789,7 @@ yum install curl
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -772,35 +808,35 @@ yum install curl
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/08/08/yum%E6%BA%90/">
+                <a href="/2020/08/17/%E8%85%BE%E8%AE%AF%E4%BA%91%EF%BC%8Bhexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
                         
-                        <img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0/CentOS.jpg" class="responsive-img" alt="yum源">
+                        <img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0/hexo.png" class="responsive-img" alt="腾讯云＋hexo 搭建个人博客">
                         
-                        <span class="card-title">yum源</span>
+                        <span class="card-title">腾讯云＋hexo 搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             Centos7 配置本地Yum 源
+                            Hexo安装过程准备任务1.安装node.js和git我们只需复制网址到官网下载即可 
+Git下载node下载
+需要注意的是我们要添加node的环境变量
+环境变量配置写node的安装路径即可
 
- 这是一篇充满怨气的文章
-去你妈的的网络搭建（小声bb）
-创建并挂载Iso镜像文件mkdir /mnr/cdrom 
-mount /dev/cdrom mnt/cdrom删除/etc/yum.repo
+2.验证node安装完成在cmd中输入 nod
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/centos/" class="post-category">
-                                    centos
+                            <a href="/categories/Centos/" class="post-category">
+                                    Centos
                                 </a>
                             
                             
