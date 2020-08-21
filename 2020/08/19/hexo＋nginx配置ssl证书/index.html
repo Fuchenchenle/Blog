@@ -465,7 +465,7 @@
 
 anonymous_enable=No     #禁止匿名用户登录</code></pre><p>用Filezilla 客户端连接到你的云服务器后上传ssl证书</p>
 <h3 id="三、部署SSL证书"><a href="#三、部署SSL证书" class="headerlink" title="三、部署SSL证书"></a>三、部署SSL证书</h3><p>1.文件默认上传至我们的用户文件夹下</p>
-<pre><code>vim /home/fuchen
+<pre><code>cd /home/fuchen
 ls</code></pre><p>2.解压缩文件</p>
 <pre><code>unzip ~.zip</code></pre><p>解压完成后，会在我们的文件夹下生成 <code>Nginx</code> <code>Apache</code> <code>IIS</code> <code>Tomcat</code>    文件夹 我们只需要用Nginx </p>
 <p>4.将Nginx文件夹下的文件复制到新建的文件夹下</p>
@@ -473,7 +473,7 @@ ls</code></pre><p>2.解压缩文件</p>
 cd /home/fuchen/Nginx
 cp ~.crt /etc/nginx/ssl/
 cp ~.key /etc/nginx/ssl/</code></pre><p>5.打开nginx.conf 文件夹 修改配置文件</p>
-<pre><code>vim /etc/nignx/nginx.conf</code></pre><pre class=" language-nginx"><code class="language-nginx"> <span class="token number">59</span> <span class="token comment" spellcheck="true"># Settings for a TLS enabled server.</span>
+<pre><code>vim /etc/nginx/nginx.conf</code></pre><pre class=" language-nginx"><code class="language-nginx"> <span class="token number">59</span> <span class="token comment" spellcheck="true"># Settings for a TLS enabled server.</span>
  <span class="token number">60</span> 
  <span class="token number">61</span>     <span class="token keyword">server</span> <span class="token punctuation">{</span>
  <span class="token number">62</span>         <span class="token keyword">listen</span> <span class="token number">443</span> <span class="token keyword">ssl</span><span class="token punctuation">;</span>
