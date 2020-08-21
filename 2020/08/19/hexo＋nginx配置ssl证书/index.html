@@ -442,7 +442,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    211
+                    361
                 </div>
                 
 
@@ -464,17 +464,25 @@
 <pre><code>vim /etc/vsftpd/vsftpd.conf
 
 anonymous_enable=No     #禁止匿名用户登录</code></pre><p>用Filezilla 客户端连接到你的云服务器后上传ssl证书</p>
-<h3 id="三、部署SSL证书"><a href="#三、部署SSL证书" class="headerlink" title="三、部署SSL证书"></a>三、部署SSL证书</h3><p>1.解压缩</p>
-<pre class=" language-nginx"><code class="language-nginx"> <span class="token number">59</span> <span class="token comment" spellcheck="true"># Settings for a TLS enabled server.</span>
+<h3 id="三、部署SSL证书"><a href="#三、部署SSL证书" class="headerlink" title="三、部署SSL证书"></a>三、部署SSL证书</h3><p>1.文件默认上传至我们的用户文件夹下</p>
+<pre><code>vim /home/fuchen
+ls</code></pre><p>2.解压缩文件</p>
+<pre><code>unzip ~.zip</code></pre><p>解压完成后，会在我们的文件夹下生成 <code>Nginx</code> <code>Apache</code> <code>IIS</code> <code>Tomcat</code>    文件夹 我们只需要用Nginx </p>
+<p>4.将Nginx文件夹下的文件复制到新建的文件夹下</p>
+<pre><code>mkdir /etc/nginx/ssl/
+cd /home/fuchen/Nginx
+cp ~.crt /etc/nginx/ssl/
+cp ~.key /etc/nginx/ssl/</code></pre><p>5.打开nginx.conf 文件夹 修改配置文件</p>
+<pre><code>vim /etc/nignx/nginx.conf</code></pre><pre class=" language-nginx"><code class="language-nginx"> <span class="token number">59</span> <span class="token comment" spellcheck="true"># Settings for a TLS enabled server.</span>
  <span class="token number">60</span> 
  <span class="token number">61</span>     <span class="token keyword">server</span> <span class="token punctuation">{</span>
  <span class="token number">62</span>         <span class="token keyword">listen</span> <span class="token number">443</span> <span class="token keyword">ssl</span><span class="token punctuation">;</span>
  <span class="token number">63</span>         <span class="token keyword">ssl</span> on<span class="token punctuation">;</span>
- <span class="token number">64</span>         <span class="token keyword">server_name</span>  fuchenchenle<span class="token punctuation">.</span>cn<span class="token punctuation">;</span>
- <span class="token number">65</span>         <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>hexo<span class="token punctuation">;</span>
+ <span class="token number">64</span>         <span class="token keyword">server_name</span>  fuchenchenle<span class="token punctuation">.</span>cn<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">#域名</span>
+ <span class="token number">65</span>         <span class="token keyword">root</span>         <span class="token operator">/</span>home<span class="token operator">/</span>hexo<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">#网站主目录</span>
  <span class="token number">66</span> 
- <span class="token number">67</span>         <span class="token keyword">ssl_certificate</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>1_fuchenchenle<span class="token punctuation">.</span>cn_bundle<span class="token punctuation">.</span>crt<span class="token punctuation">;</span>
- <span class="token number">68</span>         <span class="token keyword">ssl_certificate_key</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>2_fuchenchenle<span class="token punctuation">.</span>cn<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
+ <span class="token number">67</span>         <span class="token keyword">ssl_certificate</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>1_fuchenchenle<span class="token punctuation">.</span>cn_bundle<span class="token punctuation">.</span>crt<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">#crt文件路径</span>
+ <span class="token number">68</span>         <span class="token keyword">ssl_certificate_key</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>2_fuchenchenle<span class="token punctuation">.</span>cn<span class="token punctuation">.</span>key<span class="token punctuation">;</span>        <span class="token comment" spellcheck="true">#key文件路径</span>
  <span class="token number">69</span>         <span class="token keyword">ssl_session_cache</span> shared<span class="token punctuation">:</span><span class="token keyword">SSL</span><span class="token punctuation">:</span>1m<span class="token punctuation">;</span>
  <span class="token number">70</span>         <span class="token keyword">ssl_session_timeout</span>  10m<span class="token punctuation">;</span>
  <span class="token number">71</span>         <span class="token keyword">ssl_ciphers</span> HIGH<span class="token punctuation">:</span><span class="token operator">!</span>aNULL<span class="token punctuation">:</span><span class="token operator">!</span>MD5<span class="token punctuation">;</span>
@@ -489,8 +497,11 @@ anonymous_enable=No     #禁止匿名用户登录</code></pre><p>用Filezilla �
                     <span class="token comment" spellcheck="true">#定义首页索引文件名称</span>
  <span class="token number">79</span>                 <span class="token keyword">index</span> <span class="token keyword">index</span><span class="token punctuation">.</span>html<span class="token punctuation">;</span>
  <span class="token number">80</span>         <span class="token punctuation">}</span>
- <span class="token number">81</span>     <span class="token punctuation">}</span></code></pre>
-
+ <span class="token number">81</span><span class="token punctuation">}</span>
+ <span class="token number">82</span><span class="token punctuation">}</span></code></pre>
+<p>6.查看是否有报错，无报错重启服务器</p>
+<pre><code>nginx -t
+systemctl restart nginx</code></pre>
             </div>
             <hr/>
 
