@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-20T01:14:58.806Z</updated>
+  <updated>2020-10-12T13:48:28.613Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian10 挂载本地ISO 当APT源</title>
+    <link href="http://yoursite.com/2020/10/12/Debian10-%E6%8C%82%E8%BD%BD%E6%9C%AC%E5%9C%B0ISO-%E5%BD%93APT%E6%BA%90/"/>
+    <id>http://yoursite.com/2020/10/12/Debian10-%E6%8C%82%E8%BD%BD%E6%9C%AC%E5%9C%B0ISO-%E5%BD%93APT%E6%BA%90/</id>
+    <published>2020-10-12T11:15:22.000Z</published>
+    <updated>2020-10-12T13:48:28.613Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Debian10-挂载本地ISO-当镜像源"><a href="#Debian10-挂载本地ISO-当镜像源" class="headerlink" title="Debian10 挂载本地ISO 当镜像源"></a><center>Debian10 挂载本地ISO 当镜像源</center></h3><p>Debian有三个DVD镜像 其中1是系统盘，包含常用的软件，2和3是软件盘</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0/Debian.png" alt=""></p><p><a href="https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/" target="_blank" rel="noopener">Debian10 官网镜像下载地址</a></p><h5 id="1-创建挂载点"><a href="#1-创建挂载点" class="headerlink" title="1. 创建挂载点"></a>1. 创建挂载点</h5><p><code>mkdir /mnt/dev/</code></p><h5 id="2-挂载镜像"><a href="#2-挂载镜像" class="headerlink" title="2.挂载镜像"></a>2.挂载镜像</h5><p><code>mount /dev/cdrom /mnt/dev/</code></p><h5 id="3-添加本地apt源"><a href="#3-添加本地apt源" class="headerlink" title="3.添加本地apt源"></a>3.添加本地apt源</h5><p><code>apt-cdrom add /mnt/dev/</code></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Debian10-挂载本地ISO-当镜像源&quot;&gt;&lt;a href=&quot;#Debian10-挂载本地ISO-当镜像源&quot; class=&quot;headerlink&quot; title=&quot;Debian10 挂载本地ISO 当镜像源&quot;&gt;&lt;/a&gt;&lt;center&gt;Debian10 挂载本地IS</summary>
+      
+    
+    
+    
+    <category term="Debian" scheme="http://yoursite.com/categories/Debian/"/>
+    
+    
+    <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>20年东营市网络搭建赛题解法</title>
