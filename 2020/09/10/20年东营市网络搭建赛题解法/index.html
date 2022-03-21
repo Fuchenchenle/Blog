@@ -1,0 +1,1371 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="20年东营市网络搭建赛题解法, Fuchenchenle">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>20年东营市网络搭建赛题解法 | Fuchenchenle</title>
+    <link rel="icon" type="image/jpeg" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/avatar.jpg">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/css/my.css">
+
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="Fuchenchenle" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Fuchenchenle</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Fuchenchenle</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/wenzhang.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">20年东营市网络搭建赛题解法</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-09-10
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-09-20
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h3 id="20年东营市网络搭建赛题解法"><a href="#20年东营市网络搭建赛题解法" class="headerlink" title="20年东营市网络搭建赛题解法"></a><center>20年东营市网络搭建赛题解法</center></h3><p><del>这种年年都是主办方拿奖的比赛，什么成分懂得都懂</del></p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><h5 id="1-所有云主机都要设置ip"><a href="#1-所有云主机都要设置ip" class="headerlink" title="1.所有云主机都要设置ip"></a>1.所有云主机都要设置ip</h5><h5 id="2-关闭防火墙和selinux"><a href="#2-关闭防火墙和selinux" class="headerlink" title="2.关闭防火墙和selinux"></a>2.关闭防火墙和selinux</h5><p> <code>setenforce 0</code></p>
+<p><code>systemctl stop firewall</code></p>
+<h5 id="3-所有主机配置yum源"><a href="#3-所有主机配置yum源" class="headerlink" title="3.所有主机配置yum源"></a>3.所有主机配置yum源</h5><p><code>mkdir /mnt/cdrom</code></p>
+<p><code>mount  /dev/cdrom /mnt/cdrom/</code></p>
+<p><code>cd /etc/yum.repos.d/</code></p>
+<p><code>cp CentOS-Base.repo  iso.repo</code></p>
+<p><code>rm -rf C*</code></p>
+<p><code>vim iso.repo</code></p>
+<pre><code>[iso]
+name=iso
+baseurl=file:///mnt/cdrom/    #挂载的目录
+gpgcheck=1
+enabled=1    #1表示启用源文件
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#懒得背命令就复制原有的Yum源文件当作模板，注释前面所有文字修改后四行即可</code></pre><p><code>yum clean all</code></p>
+<h3 id="Linux-操作系统部分"><a href="#Linux-操作系统部分" class="headerlink" title="Linux 操作系统部分"></a>Linux 操作系统部分</h3><h3 id="（一）在云主机7中完成域名服务器和SAMBA服务器的部署"><a href="#（一）在云主机7中完成域名服务器和SAMBA服务器的部署" class="headerlink" title="（一）在云主机7中完成域名服务器和SAMBA服务器的部署"></a>（一）在云主机7中完成域名服务器和SAMBA服务器的部署</h3><p>1.在此服务器中安装配置DNS服务，负责区域<code>chinaskills.net</code>内主机解析，六台主机分别为<code>dns.chinaskills.net</code>、<code>mail.chinaskills.net</code> 、<code>www1.chinaskills.net</code>、<code>www2.chinaskills.net</code>、<code>ssm.chinaskills.net</code> 、<code>ha.chinaskills.net</code>，做好正反向DNS服务解析</p>
+<h5 id="1-安装bind服务"><a href="#1-安装bind服务" class="headerlink" title="1.安装bind服务"></a>1.安装bind服务</h5><p><code>yum install  -y bind</code></p>
+<h5 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h5><p><code>vim /etc/named.conf</code></p>
+<pre><code>options {
+        listen-on port 53 { any; };    #any监听所有端口
+        listen-on-v6 port 53 { ::1; };
+        directory       &quot;/var/named&quot;;
+        dump-file       &quot;/var/named/data/cache_dump.db&quot;;
+        statistics-file &quot;/var/named/data/named_stats.txt&quot;;
+        memstatistics-file &quot;/var/named/data/named_mem_stats.txt&quot;;
+        allow-query     { any; };    #any允许所有人查询</code></pre><h5 id="3-添加正反向解析"><a href="#3-添加正反向解析" class="headerlink" title="3.添加正反向解析"></a>3.添加正反向解析</h5><p><code>vim /etc/named.rfc1912.zones</code></p>
+<pre><code>zone &quot;chinaskills.net&quot;IN{
+    type master;
+    file &quot;chinaskills.net.zone&quot;;
+};
+
+zone &quot;70.168.172.in-addr.arpa&quot; IN{
+    type master;
+    file &quot;172.168.70.arpa&quot;;
+};</code></pre><h5 id="4-创建正反向解析记录文件"><a href="#4-创建正反向解析记录文件" class="headerlink" title="4.创建正反向解析记录文件"></a>4.创建正反向解析记录文件</h5><p><code>cp /var/named/named.localhost /var/named/chinaskills.net.zone</code></p>
+<p><code>cp /var/named/named.loopback /var/named/172.168.70.arpa</code></p>
+<pre><code>#正向解析
+chinaskills.net. rname.invalid. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+
+
+        IN NS dns.chinaskills.net.
+dns     IN A  172.168.70.176
+www1    IN A  172.168.70.177
+www2    IN A  172.168.70.178
+ssm     IN A  172.168.70.179
+mail    IN A  172.168.70.180
+ha      IN A  172.168.70.169</code></pre><pre><code>#反向解析
+$TTL 1D
+@       IN SOA  chinaskills.net  rname.invalid. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+        IN NS  dns.chinaskills.net.
+176     IN PTR dns.chinaskills.net.
+177     IN PTR www1.chinaskills.net.
+178     IN PTR www2.chinaskills.net.
+179     IN PTR ssm.chinaskills.net.
+180     IN PTR mail.chinaskills.net.
+169     IN PTR ha.chinaskills.net.</code></pre><p>检查主配置文件和区域解析文件错误</p>
+<p><code>named-checkconf /etc/named.conf</code></p>
+<p><code>named-checkzone chinaskills.net /var/named/chinaskills.net.zone</code></p>
+<p><code>named-checkzone 172.168.70 /var/named/172.168.70.arpa</code></p>
+<h5 id="5-测试"><a href="#5-测试" class="headerlink" title="5.测试"></a>5.测试</h5><p><code>nslookup dns.chinaskills.net</code> </p>
+<p><code>nslookup 172.168.70.176</code></p>
+<h5 id="6-踩坑"><a href="#6-踩坑" class="headerlink" title="6. 踩坑"></a>6. 踩坑</h5><p>我们在用root用户复制完区域解析文件后，两个文件默认权限是root用户，无法解析文件，这时候我们需要更改文件夹权限</p>
+<p><code>chown named:named /var/named</code></p>
+<p>或者复制的时候使用<code>cp -p</code>命令</p>
+<h3 id="2-此服务器中安装配置Samba服务"><a href="#2-此服务器中安装配置Samba服务" class="headerlink" title="2.此服务器中安装配置Samba服务"></a>2.此服务器中安装配置Samba服务</h3><p>创建三个用户user1, user2，user3。建立共享目录/opt/finance_share，要求共享名为archive，user1和user2用户可以通过虚拟用户admin1和admin2（用户名和密码相同）输入用户名和密码登录并上传文件</p>
+<p>限制user3用户在共享目录中最多创建3个文件</p>
+<h5 id="1-安装samba服务"><a href="#1-安装samba服务" class="headerlink" title="1.安装samba服务"></a>1.安装samba服务</h5><p><code>yum install -y samba</code></p>
+<h5 id="2-创建用户"><a href="#2-创建用户" class="headerlink" title="2.创建用户"></a>2.创建用户</h5><p><code>useradd user1 useradd user2  useradd user3</code></p>
+<h5 id="3-建立共享目录"><a href="#3-建立共享目录" class="headerlink" title="3.建立共享目录"></a>3.建立共享目录</h5><p><code>mkdir /opt/finance_share</code></p>
+<p><code>chmod 777 /opt/finance_share</code> </p>
+<h5 id="4-创建虚拟用户"><a href="#4-创建虚拟用户" class="headerlink" title="4.创建虚拟用户"></a>4.创建虚拟用户</h5><p><code>vim /etc/samba/sambusers</code></p>
+<pre><code>user1=admin1 admin2
+user2=admin1 admin2</code></pre><h5 id="5-修改配置文件"><a href="#5-修改配置文件" class="headerlink" title="5.修改配置文件"></a>5.修改配置文件</h5><p><code>vim /etc/samba/smb.conf</code></p>
+<pre><code>#在全局中添加虚拟用户登录
+username map = /etc/samba/smbusers
+
+[archice]
+comment = samba
+path = /opt/finance_share
+browseable = yes
+public = yes
+writable =  yes
+valid users = user1,user2,user3
+write list = user1,user2,user3</code></pre><p>​    </p>
+<h3 id="（二）在云主机8中完成Apache服务器的部署"><a href="#（二）在云主机8中完成Apache服务器的部署" class="headerlink" title="（二）在云主机8中完成Apache服务器的部署"></a>（二）在云主机8中完成Apache服务器的部署</h3><p>在此服务器中安装Apache服务，建立虚拟主机站点<code>www1.chinaskills.net：</code> 主页名字为 2019dcn.html，首页内容为“Welcome chinaskills  website1” 。配置访问日志路径和名称为/var/log/httpd/www1.chinaskills.net-access_log，日志记录格式为普通型</p>
+<h5 id="1-安装apache服务"><a href="#1-安装apache服务" class="headerlink" title="1.安装apache服务"></a>1.安装apache服务</h5><p><code>yum install -y httpd</code></p>
+<h5 id="2-创建网站"><a href="#2-创建网站" class="headerlink" title="2.创建网站"></a>2.创建网站</h5><p>mkdir /www/8080</p>
+<h5 id="3-修改主页内容"><a href="#3-修改主页内容" class="headerlink" title="3.修改主页内容"></a>3.修改主页内容</h5><p><code>echo &quot;Welcome chinaskills  website1&quot; &gt; /www/8080/2019dcb.html</code></p>
+<h5 id="3-修改配置文件"><a href="#3-修改配置文件" class="headerlink" title="3.修改配置文件"></a>3.修改配置文件</h5><p><code>vim /etc/httpd/conf/httpd.conf</code></p>
+<pre><code># 数字是行号
+......
+42 Listen 8080    #监听端口
+......
+86 ServerAdmin root@localhost     #管理员邮箱地址
+......
+95 ServerName www1.chinaskills.net   #网站服务器域名
+......
+119 DocumentRoot &quot;/www/8080&quot;   #网站数据目录
+......
+124 &lt;Directory &quot;/www/8080&quot;&gt;    #网站数据目录权限
+125     AllowOverride None
+126     # Allow open access:
+127     Require all granted
+128 &lt;/Directory&gt;
+......
+163 &lt;IfModule dir_module&gt;
+164     DirectoryIndex index.html 2019dcn.html    #默认网站索引页面
+165 &lt;/IfModule&gt;
+......
+211 Customlog &quot;/var/log/httpd/www1.chinaskills.net-access_log&quot; common    #访问日志路径 common为普通
+.....</code></pre><h5 id="4-检查配置文件"><a href="#4-检查配置文件" class="headerlink" title="4.检查配置文件"></a>4.检查配置文件</h5><p><code>httpd -t</code></p>
+<h5 id="5-修改hosts"><a href="#5-修改hosts" class="headerlink" title="5.修改hosts"></a>5.修改hosts</h5><p><code>vim /etc/hosts</code></p>
+<pre><code>127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.168.70.177    `www1.chinaskills.net   ip #网站指向你的网站</code></pre><h5 id="6-重启httpd-在浏览器输入你的域名查看网页"><a href="#6-重启httpd-在浏览器输入你的域名查看网页" class="headerlink" title="6.重启httpd 在浏览器输入你的域名查看网页"></a>6.重启httpd 在浏览器输入你的域名查看网页</h5><p><code>systemctl restart httpd</code></p>
+<p>​    </p>
+<h3 id="（三）在云主机8中完成防火墙及时间服务器的部署"><a href="#（三）在云主机8中完成防火墙及时间服务器的部署" class="headerlink" title="（三）在云主机8中完成防火墙及时间服务器的部署"></a>（三）在云主机8中完成防火墙及时间服务器的部署</h3><p>配置系统防火墙firewall，关闭除提供系统服务（80、443、25、22、110、53）以外的端口，在此服务器上实现网络时间服务Chrony的配置，使得172.20.30.0/24网络中的其它计算机通过此服务器进行网络校时</p>
+<h5 id="1-开放端口"><a href="#1-开放端口" class="headerlink" title="1.开放端口"></a>1.开放端口</h5><p><code>firewall-cmd --zone=public --add-port=80/tcp --permanent</code></p>
+<p><code>firewall-cmd --zone=public --add-port=443/tcp --permanent</code></p>
+<p><code>firewall-cmd --zone=public --add-port=25/tcp --permanent</code></p>
+<p><code>firewall-cmd --zone=public --add-port=22/tcp --permanent</code></p>
+<p><code>firewall-cmd --zone=public --add-port=110/tcp --permanent</code>  </p>
+<p><code>firewall-cmd --zone=public --add-port=53/tcp --permanent</code></p>
+<h5 id="2-更新防火墙规则"><a href="#2-更新防火墙规则" class="headerlink" title="2.更新防火墙规则"></a>2.更新防火墙规则</h5><p><code>firewall-cmd --reload</code></p>
+<h5 id="3-查看打开的端口"><a href="#3-查看打开的端口" class="headerlink" title="3.查看打开的端口"></a>3.查看打开的端口</h5><p><code>firewall-cmd --zone=public --list-ports</code></p>
+<h5 id="5-安装Chrony"><a href="#5-安装Chrony" class="headerlink" title="5.安装Chrony"></a>5.安装Chrony</h5><p><code>yum install -y Chrony</code></p>
+<h5 id="6-修改配置文件"><a href="#6-修改配置文件" class="headerlink" title="6.修改配置文件"></a>6.修改配置文件</h5><p><code>vim /etc/chrony</code></p>
+<pre><code>27  allow 172.168.70.0/24
+29  local stratum 10</code></pre><p>其他云主机</p>
+<p><code>vim /etc/chrony</code></p>
+<pre><code>server 172.168.70.177 iburst</code></pre><h3 id="（四）在云主机9中完成Apache服务器的部署"><a href="#（四）在云主机9中完成Apache服务器的部署" class="headerlink" title="（四）在云主机9中完成Apache服务器的部署"></a>（四）在云主机9中完成Apache服务器的部署</h3><p>在此服务器中安装Apache服务，建立虚拟主机站点<code>www2.chinaskills.net</code>主页名字为 2019dcn.html，首页内容为<code>Welcome chinaskills  website2</code>  配置访问日志路径和名称为/var/log/httpd/www2.chinaskills.net-access_log，日志记录格式为复合型</p>
+<h5 id="1-安装apache服务-1"><a href="#1-安装apache服务-1" class="headerlink" title="1.安装apache服务"></a>1.安装apache服务</h5><p><code>yum install -y httpd</code></p>
+<h5 id="2-创建网站-1"><a href="#2-创建网站-1" class="headerlink" title="2.创建网站"></a>2.创建网站</h5><p>mkdir /www/8080</p>
+<h5 id="3-修改主页内容-1"><a href="#3-修改主页内容-1" class="headerlink" title="3.修改主页内容"></a>3.修改主页内容</h5><p><code>echo &quot;Welcome chinaskills  website2&quot; &gt; /www/8080/2019dcb.html</code></p>
+<h5 id="3-修改配置文件-1"><a href="#3-修改配置文件-1" class="headerlink" title="3.修改配置文件"></a>3.修改配置文件</h5><p><code>vim /etc/httpd/conf/httpd.conf</code></p>
+<pre><code># 数字是行号
+......
+42 Listen 8080    #监听端口
+......
+86 ServerAdmin root@localhost     #管理员邮箱地址
+......
+95 ServerName www1.chinaskills.net   #网站服务器域名
+......
+119 DocumentRoot &quot;/www/8080&quot;   #网站数据目录
+......
+124 &lt;Directory &quot;/www/8080&quot;&gt;    #网站数据目录权限
+125     AllowOverride None
+126     # Allow open access:
+127     Require all granted
+128 &lt;/Directory&gt;
+......
+163 &lt;IfModule dir_module&gt;
+164     DirectoryIndex index.html 2019dcn.html    #默认网站索引页面
+165 &lt;/IfModule&gt;
+......
+211 Customlog &quot;/var/log/httpd/www2.chinaskills.net-access_log&quot; common    #访问日志路径 common为普通
+.....</code></pre><h5 id="4-检查配置文件-1"><a href="#4-检查配置文件-1" class="headerlink" title="4.检查配置文件"></a>4.检查配置文件</h5><p><code>httpd -t</code></p>
+<h5 id="5-修改hosts-1"><a href="#5-修改hosts-1" class="headerlink" title="5.修改hosts"></a>5.修改hosts</h5><p><code>vim /etc/hosts</code></p>
+<pre><code>127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+172.168.70.178    `www2.chinaskills.net   ip #网站指向你的网站</code></pre><h5 id="6-重启httpd-在浏览器输入你的域名查看网页-1"><a href="#6-重启httpd-在浏览器输入你的域名查看网页-1" class="headerlink" title="6.重启httpd 在浏览器输入你的域名查看网页"></a>6.重启httpd 在浏览器输入你的域名查看网页</h5><p><code>systemctl restart httpd</code></p>
+<p>​    </p>
+<h3 id="（五）在云主机9中完成数据库服务器的部"><a href="#（五）在云主机9中完成数据库服务器的部" class="headerlink" title="（五）在云主机9中完成数据库服务器的部"></a>（五）在云主机9中完成数据库服务器的部</h3><p>将此服务器配置为数据库服务器，创建数据库为School，在库中创建表为Score，在表中创建2个用户，分别为（1，suser1，1999-6-1，female），（2，suser2，2000-9-1，male），口令与用户名相同，表结构如下</p>
+<table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>数据类型</th>
+<th>主键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ID</td>
+<td>Int</td>
+<td>是</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>varchar(20)</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Birthday</td>
+<td>Datetime</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>char(10)</td>
+<td>否</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>char（64）</td>
+<td>否</td>
+</tr>
+</tbody></table>
+<h5 id="1-安装mariadb"><a href="#1-安装mariadb" class="headerlink" title="1.安装mariadb"></a>1.安装mariadb</h5><p><code>yum install -y mariadb-server</code></p>
+<h5 id="2-运行安全配置向导"><a href="#2-运行安全配置向导" class="headerlink" title="2.运行安全配置向导"></a>2.运行安全配置向导</h5><p><code>mysql_secure_installation</code></p>
+<pre><code>Enter current password for root (enter for none):  # 输入数据库超级管理员root的密码,没有直接回车
+Set root password? [Y/n]  # 设置密码，y
+New password:   687145  # 新密码
+Re-enter new password: 687145      # 再次输入密码
+Remove anonymous users? [Y/n] y     # 移除匿名用户
+Disallow root login remotely? [Y/n] y # 拒绝root远程登录
+Remove test database and access to it? [Y/n] y     # 删除test数据库
+Reload privilege tables now? [Y/n] y     # 重新加载权限表</code></pre><h5 id="3-进入数据库"><a href="#3-进入数据库" class="headerlink" title="3.进入数据库"></a>3.进入数据库</h5><p><code>mysql -u root -p</code></p>
+<h5 id="4-创建数据表"><a href="#4-创建数据表" class="headerlink" title="4.创建数据表"></a>4.创建数据表</h5><p><code>Create database School;</code></p>
+<h5 id="5-切换到数据表"><a href="#5-切换到数据表" class="headerlink" title="5.切换到数据表"></a>5.切换到数据表</h5><p><code>use School;</code></p>
+<h5 id="6-创建名为Score的数据表"><a href="#6-创建名为Score的数据表" class="headerlink" title="6.创建名为Score的数据表"></a>6.创建名为Score的数据表</h5><pre class=" language-mysql"><code class="language-mysql">MariaDB [School]> create table Score(
+    -> ID Int primary key,        #primary key为主键
+    -> Name varchar(10),
+    -> Birthday Datetime,
+    -> Sex char(10),
+    -> Password char(64)
+    -> );</code></pre>
+<h5 id="7-查看数据表"><a href="#7-查看数据表" class="headerlink" title="7. 查看数据表"></a>7. 查看数据表</h5><p><code>desc Score;</code></p>
+<h5 id="8-在表中创建用户"><a href="#8-在表中创建用户" class="headerlink" title="8.在表中创建用户"></a>8.在表中创建用户</h5><pre class=" language-mysql"><code class="language-mysql">MariaDB [School]>  insert into Score values( 
+    1, 
+    'suser1', 
+    '1999-6-1',
+    'female',
+    'suser1'
+);</code></pre>
+<pre class=" language-mysql"><code class="language-mysql"> MariaDB [School]> insert into Score values(
+  2,
+  'suser2',
+  '2000-9-1',
+  'male',
+  'suser2'
+  );</code></pre>
+<h5 id="9-查看表中数据"><a href="#9-查看表中数据" class="headerlink" title="9.查看表中数据"></a>9.查看表中数据</h5><p><code>select * from Score;</code></p>
+<h5 id="10开启数据库的查询日志，路径为-var-log-mariadb-mariadb-log"><a href="#10开启数据库的查询日志，路径为-var-log-mariadb-mariadb-log" class="headerlink" title="10开启数据库的查询日志，路径为/var/log/mariadb/mariadb.log"></a>10开启数据库的查询日志，路径为/var/log/mariadb/mariadb.log</h5><p><code>vim /etc/my.cnf</code></p>
+<pre><code>slow_query_log=1
+slow_query_log_file=ar/log/mariadb/mariadb.log</code></pre><h3 id="后面还有三台主机没写，别问，问就是比完了不想写了，垃圾学校，垃圾主办方"><a href="#后面还有三台主机没写，别问，问就是比完了不想写了，垃圾学校，垃圾主办方" class="headerlink" title="后面还有三台主机没写，别问，问就是比完了不想写了，垃圾学校，垃圾主办方"></a><center>后面还有三台主机没写，别问，问就是比完了不想写了，垃圾学校，垃圾主办方</center></h3>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Fuchenchenle</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://fuchenchenle.cn/2020/09/10/20%E5%B9%B4%E4%B8%9C%E8%90%A5%E5%B8%82%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E8%B5%9B%E9%A2%98%E8%A7%A3%E6%B3%95/">http://fuchenchenle.cn/2020/09/10/20%E5%B9%B4%E4%B8%9C%E8%90%A5%E5%B8%82%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA%E8%B5%9B%E9%A2%98%E8%A7%A3%E6%B3%95/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Fuchenchenle</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.iohttps://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E8%83%8C%E6%99%AF/wenzhang.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/10/12/Debian10-%E6%8C%82%E8%BD%BD%E6%9C%AC%E5%9C%B0ISO-%E5%BD%93APT%E6%BA%90/">
+                    <div class="card-image">
+                        
+                        <img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0/Debian.jpg" class="responsive-img" alt="Debian10 挂载本地ISO 当APT源">
+                        
+                        <span class="card-title">Debian10 挂载本地ISO 当APT源</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Debian10 挂载本地ISO 当镜像源Debian有三个DVD镜像 其中1是系统盘，包含常用的软件，2和3是软件盘
+
+Debian10 官网镜像下载地址
+1. 创建挂载点mkdir /mnt/dev/
+2.挂载镜像mount /dev/
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-12
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Debian/" class="post-category">
+                                    Debian
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/24/Nginx%E8%AE%BE%E7%BD%AE404%E8%B7%B3%E8%BD%AC/">
+                    <div class="card-image">
+                        
+                        <img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0/nginx.png" class="responsive-img" alt="Nginx设置404跳转">
+                        
+                        <span class="card-title">Nginx设置404跳转</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Nginx 设置 404 页面跳转1.打开你的Nginx.conf文件
+vim /etc/nginx/nginx.con2.在http里面添加启用error_page 
+proxy_intercept_errors on;
+3.在serve
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Centos/" class="post-category">
+                                    Centos
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Fuchenchenle<br />'
+            + '文章作者: Fuchenchenle<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Fuchenchenle</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">14.8k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+            <span id="icp"><img src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">鲁ICP备20033576-1号</a>
+                <div style="width:300px;margin:0 auto; padding:20px 0;">
+                    <a target="_white" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37050202371071" style="display:inline-block;text-decoration:none;height:30px;line-height:30px;"><img src="" style="float:left;"/><p style="float:left;height:30px;line-height:30px;margin: 0px 0px 0px 5px; color:#939393;">鲁公网安备 37050202371071号</p></a>
+                </div>
+            </span>
+               
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Fuchenchenle" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:490597217@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=490597217" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 490597217" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/Fuchenchenle/fuchenchenle.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</html>
+<script type="text/javascript">
+    //只在桌面版网页启用特效
+    var windowWidth = $(window).width();
+    if (windowWidth > 768) {
+        document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+    }
+    </script>
