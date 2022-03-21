@@ -6,7 +6,7 @@
   <link href="http://fuchenchenle.cn/atom.xml" rel="self"/>
   
   <link href="http://fuchenchenle.cn/"/>
-  <updated>2022-03-20T12:47:06.336Z</updated>
+  <updated>2022-03-20T11:25:58.455Z</updated>
   <id>http://fuchenchenle.cn/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Android Studio 安装教程</title>
-    <link href="http://fuchenchenle.cn/2022/03/20/Android-Studio-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <id>http://fuchenchenle.cn/2022/03/20/Android-Studio-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
-    <published>2022-03-20T11:08:04.000Z</published>
-    <updated>2022-03-20T12:47:06.336Z</updated>
-    
-    <content type="html"><![CDATA[<center>Android Studio 安装教程</center><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我从19年入门网工 到21年转到软件开发，Android Studio是我安装过踩坑踩得最多的软件</p><p>2017  Google I/O大会 Google将Kotlin作为Android的第一开发语言，到目前为止，国内开发安卓开发语言已经从Java改为了Kotlin.  但是，大部分高校教的语言还是JAVA，本篇也以Java语言为主</p><h3 id="一-下载"><a href="#一-下载" class="headerlink" title="一.下载"></a>一.下载</h3><p>我们先从官网下载最新版的Android  <a href="https://developer.android.google.cn/studio/" target="_blank" rel="noopener">官网链接</a></p><p>然后点击绿色的  Download Android Studio </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E4%B8%8B%E8%BD%BD.png" alt=""></p><p>​    </p><h3 id="二-下载安装Java-jdk-1-8"><a href="#二-下载安装Java-jdk-1-8" class="headerlink" title="二.下载安装Java jdk 1.8"></a>二.下载安装Java jdk 1.8</h3><h5 id="2-1-下载Java-jdk-1-8"><a href="#2-1-下载Java-jdk-1-8" class="headerlink" title="2.1 下载Java jdk 1.8"></a>2.1 下载Java jdk 1.8</h5><p>不知道从什么时候开始<a href="https://java.com/zh-CN/" target="_blank" rel="noopener">Java官网</a>不提供JDK的下载了</p><p>我从别的网站找到了JDK 1.8 的安装程序并存到了百度网盘 <a href="https://pan.baidu.com/s/1QVOELVSCHXeaQZ8rCxD74Q" target="_blank" rel="noopener">提取码:8gtb</a> </p><p>​    </p><h5 id="2-2-安装Java"><a href="#2-2-安装Java" class="headerlink" title="2.2 安装Java"></a>2.2 安装Java</h5><p>首先双击 .exe 文件安装，我的建议是默认安装到C盘，路径是统一的，而且也不大</p><p>安装程序一路回车C盘默认安装位置 ： ‘C:\Program Files\Java\jdk1.8.0_181’</p><h5 id="2-3-配置Java环境变量"><a href="#2-3-配置Java环境变量" class="headerlink" title="2.3 配置Java环境变量"></a>2.3 配置Java环境变量</h5><p>打开系统设置的环境变量，建议Win10,11用户直接搜索栏搜索环境变量 </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/CK~140GO%40ALJ%29%28F%5D9_%28%5D%60H8.png" alt="点击环境变量"></p><p>新建JAVA_HOME变量</p><p>系统变量-&gt;新建 变量名：<code>JAVA_HOME</code> 变量值：<code>C:\Program Files\Java\jdk1.8.0_211</code> （以安装路径为主）</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/JAVA_HOME.png" alt="JAVA_HOME"></p><p>新建CLASSPATH变量</p><p>系统变量-&gt;新建 变量名：<code>CLASSPATH</code> 变量值：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</code> </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/CLASSPATH.png" alt="CLASSPATH"></p><p>添加PATH变量</p><p>系统变量-&gt;编辑 找到Path选项： 变量名：<code>Path</code> 变量值：<code>%JAVA_HOME%\bin;</code></p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/PATH.png" alt="Path"></p><h5 id="2-3检测JAVA环境配置是否成功"><a href="#2-3检测JAVA环境配置是否成功" class="headerlink" title="2.3检测JAVA环境配置是否成功"></a>2.3检测JAVA环境配置是否成功</h5><p>打开cmd</p><p>在cmd输入 java -version 显示版本即为配置成功</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/java%20-vesion.png" alt=""></p><h3 id="三-安装Android-Studio"><a href="#三-安装Android-Studio" class="headerlink" title="三.安装Android Studio"></a>三.安装Android Studio</h3><h5 id="3-1-安装"><a href="#3-1-安装" class="headerlink" title="3.1 安装"></a>3.1 安装</h5><p>1.点击.exe程序一路安装</p><p>2.到选择安装位置的步骤我建议新建一个文件夹</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%BA%94%E6%AD%A5.png" alt=""></p><p>3.一直点Next 直到安装完成，安装完成后点finsh</p><p>4.点击finsh启动软件，第一次打开会弹出导入设置文件的界面,点击第二个选项</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E5%80%92%E5%85%A5%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6.png" alt="点击Do not Import settings"></p><p>5.选择 Don`t send</p><p>![Don`t send](<a href="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Don%60t%20%20send.png" target="_blank" rel="noopener">https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Don%60t%20%20send.png</a>)</p><p>6.选择 Cancel</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Cancel.png" alt="Cancel"></p><p>7.进入欢迎界面，点击NEXT后选择 第二个 Custom 设置自己喜欢的界面,设置完后点Next</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Custom.jpg" alt="Custom"></p><p>8.新建一个文件夹，用来存放SDK，把图片的内容都勾上</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;center&gt;Android Studio 安装教程&lt;/center&gt;
-
-&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;我从19年入门网工 到21年转到软件开发，Android Stu</summary>
-      
-    
-    
-    
-    <category term="Android Studio" scheme="http://fuchenchenle.cn/categories/Android-Studio/"/>
-    
-    
-    <category term="Java" scheme="http://fuchenchenle.cn/tags/Java/"/>
-    
-  </entry>
   
   <entry>
     <title>Android Studio 开发基础教程</title>
@@ -57,6 +31,32 @@
     <summary type="html">&lt;center&gt;Android Studio 从入门到跑路&lt;/center&gt;
 
 &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;  Android 开发现在的语言用的都是Kotlin,可惜</summary>
+      
+    
+    
+    
+    <category term="Android Studio" scheme="http://fuchenchenle.cn/categories/Android-Studio/"/>
+    
+    
+    <category term="Java" scheme="http://fuchenchenle.cn/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 安装教程</title>
+    <link href="http://fuchenchenle.cn/2022/03/20/Android-Studio-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://fuchenchenle.cn/2022/03/20/Android-Studio-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2022-03-20T11:08:04.000Z</published>
+    <updated>2022-03-21T11:05:50.017Z</updated>
+    
+    <content type="html"><![CDATA[<center>Android Studio 安装教程</center><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>我从19年入门网工 到21年转到软件开发，Android Studio是我安装过踩坑踩得最多的软件</p><p>2017  Google I/O大会 Google将Kotlin作为Android的第一开发语言，到目前为止，国内开发安卓开发语言已经从Java改为了Kotlin.  但是，大部分高校教的语言还是JAVA，本篇也以Java语言为主</p><h3 id="一-下载"><a href="#一-下载" class="headerlink" title="一.下载"></a>一.下载</h3><p>我们先从官网下载最新版的Android  <a href="https://developer.android.google.cn/studio/" target="_blank" rel="noopener">官网链接</a></p><p>然后点击绿色的  Download Android Studio </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E4%B8%8B%E8%BD%BD.png" alt=""></p><p>​    </p><h3 id="二-下载安装Java-jdk-1-8"><a href="#二-下载安装Java-jdk-1-8" class="headerlink" title="二.下载安装Java jdk 1.8"></a>二.下载安装Java jdk 1.8</h3><h5 id="2-1-下载Java-jdk-1-8"><a href="#2-1-下载Java-jdk-1-8" class="headerlink" title="2.1 下载Java jdk 1.8"></a>2.1 下载Java jdk 1.8</h5><p>不知道从什么时候开始<a href="https://java.com/zh-CN/" target="_blank" rel="noopener">Java官网</a>不提供JDK的下载了</p><p>我从别的网站找到了JDK 1.8 的安装程序并存到了百度网盘 <a href="https://pan.baidu.com/s/1QVOELVSCHXeaQZ8rCxD74Q" target="_blank" rel="noopener">提取码:8gtb</a> </p><p>​    </p><h5 id="2-2-安装Java"><a href="#2-2-安装Java" class="headerlink" title="2.2 安装Java"></a>2.2 安装Java</h5><p>首先双击 .exe 文件安装，我的建议是默认安装到C盘，路径是统一的，而且也不大</p><p>安装程序一路回车C盘默认安装位置 ： ‘C:\Program Files\Java\jdk1.8.0_181’</p><h5 id="2-3-配置Java环境变量"><a href="#2-3-配置Java环境变量" class="headerlink" title="2.3 配置Java环境变量"></a>2.3 配置Java环境变量</h5><p>打开系统设置的环境变量，建议Win10,11用户直接搜索栏搜索环境变量 </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/CK~140GO%40ALJ%29%28F%5D9_%28%5D%60H8.png" alt="点击环境变量"></p><p>新建JAVA_HOME变量</p><p>系统变量-&gt;新建 变量名：<code>JAVA_HOME</code> 变量值：<code>C:\Program Files\Java\jdk1.8.0_211</code> （以安装路径为主）</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/JAVA_HOME.png" alt="JAVA_HOME"></p><p>新建CLASSPATH变量</p><p>系统变量-&gt;新建 变量名：<code>CLASSPATH</code> 变量值：<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</code> </p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/CLASSPATH.png" alt="CLASSPATH"></p><p>添加PATH变量</p><p>系统变量-&gt;编辑 找到Path选项： 变量名：<code>Path</code> 变量值：<code>%JAVA_HOME%\bin;</code></p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/PATH.png" alt="Path"></p><h5 id="2-3检测JAVA环境配置是否成功"><a href="#2-3检测JAVA环境配置是否成功" class="headerlink" title="2.3检测JAVA环境配置是否成功"></a>2.3检测JAVA环境配置是否成功</h5><p>打开cmd</p><p>在cmd输入 java -version 显示版本即为配置成功</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/java%20-vesion.png" alt=""></p><h3 id="三-安装Android-Studio"><a href="#三-安装Android-Studio" class="headerlink" title="三.安装Android Studio"></a>三.安装Android Studio</h3><h5 id="3-1-安装"><a href="#3-1-安装" class="headerlink" title="3.1 安装"></a>3.1 安装</h5><p>1.点击.exe程序一路安装</p><p>2.到选择安装位置的步骤我建议新建一个文件夹</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E5%AE%89%E8%A3%85%E7%AC%AC%E4%BA%94%E6%AD%A5.png" alt=""></p><p>3.一直点Next 直到安装完成，安装完成后点finsh</p><p>4.点击finsh启动软件，第一次打开会弹出导入设置文件的界面,点击第二个选项</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E5%80%92%E5%85%A5%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6.png" alt="点击Do not Import settings"></p><p>5.选择 Don`t send</p><p>![Don`t send](<a href="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Don%60t%20%20send.png" target="_blank" rel="noopener">https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Don%60t%20%20send.png</a>)</p><p>6.选择 Cancel</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Cancel.png" alt="Cancel"></p><p>7.进入欢迎界面，点击NEXT后选择 第二个 Custom 设置自己喜欢的界面,设置完后点Next</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/Custom.jpg" alt="Custom"></p><p>8.新建一个文件夹，用来存放SDK，把图片的内容都勾上</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/JDK%E5%AE%89%E8%A3%85.jpg" alt="点击Next"></p><p>9.分配内存，默认2G即可，点Next</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98.jpg" alt="点Next"></p><p>10.点击Finsh进行下载</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E6%9C%80%E7%BB%88%E4%B8%8B%E8%BD%BD.png" alt="等待下载完成"></p><p>11.下载安装完成点Finsh</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E4%B8%8B%E8%BD%BD%E5%AE%8C%E6%88%90.jpg" alt="下载完成"></p><p>12.下载完成，进入界面</p><p><img src="https://fuchenchenle-1302247192.cos.ap-beijing.myqcloud.com/Blog/%E6%96%87%E7%AB%A0-Android%20Studio%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/%E5%BC%80%E5%A7%8B%E7%95%8C%E9%9D%A2.jpg" alt="点第一个即可创建项目"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;center&gt;Android Studio 安装教程&lt;/center&gt;
+
+&lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;我从19年入门网工 到21年转到软件开发，Android Stu</summary>
       
     
     
